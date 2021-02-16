@@ -37,9 +37,31 @@
 // let newTask = document.querySelector('#new-task');
 // console.log(newTask);
 
-let lastItem = document.querySelectorAll('.item:last-child');
-// console.log(lastItem);
-for (let i = 0; i < lastItem.length; i++) {
-  const item = lastItem[i];
-  item.style.color = 'red';
-}
+// let lastItem = document.querySelectorAll('.item:last-child');
+// // console.log(lastItem);
+// for (let i = 0; i < lastItem.length; i++) {
+//   const item = lastItem[i];
+//   item.style.color = 'red';
+// }
+
+// const parent = document.querySelector('#items');
+// const children = parent.children;
+// console.log(children[0]);
+
+// const children = grandParent.children[1];
+// const childrenLast = children.children;
+// console.log(childrenLast);
+
+// const grandParent = document.querySelector('.todo-list');
+// const children = grandParent.querySelectorAll('.item');
+// console.log(children);
+
+// const parent = children.parentElement;
+// console.log(parent);
+// const grandParent = children.closest('.todo-list');
+// console.log(grandParent);
+
+const children = document.querySelector('.item');
+const siblings = children.nextElementSibling;
+siblings.style.color = 'red';
+console.log(siblings);
