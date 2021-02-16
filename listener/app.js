@@ -1,2 +1,2 @@
-const header = document.querySelector('.header');
-header.addEventListener('click', () => {});
+const inputValue = document.querySelector('input[type="text"]');
+console.log(inputValue);
