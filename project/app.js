@@ -1,5 +1,4 @@
 //  function
-
 const createTask = (task) => {
   const listItems = document.getElementById('items');
   const listItem = document.createElement('li');
@@ -38,5 +37,10 @@ const completedTask = (task) => {
   listItem.appendChild(label);
   listItem.appendChild(button);
 
-  completedList.append(listItem);
+  completedList.appendChild(listItem);
 };
+
+const somethigh = document.getElementById('completed-task');
+somethigh.addEventListener('click', function (e) {
+  e.target.remove();
+});
